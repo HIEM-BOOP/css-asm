@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+ 
+}
+body {
+     color: #575153;
+}
+header {
+  background-image: url(images/Untitled-1.jpg);
+  
+}
+h1 {
+    color:#222222;
+}
+#fixNav {
+  display: flex;  
+  width: 100%;
+  height: 35px;
+
+}
+#fixNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fixNav ul li {
+  list-style: none inside;
+  width: auto;
+  float: left;
+  line-height: 35px; /*Cho text canh giữa menu*/
+  padding: 0;
+  margin-right: 10px;
+  position: relative;
+}
+#fixNav ul li a {
+    text-transform: uppercase
+    white-space: nowrap;
+    padding: 0 10px ;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+#fixNav ul li a:hover{
+    color: #8de3e3;  
+}
+.logo{
+    display: inline-block;
+}
+.menu {
+    display: flex;
+}
+.Trademark{
+    font-size: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
