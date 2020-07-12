@@ -2,20 +2,23 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-attachment: scroll;
- 
+  color: #575153;
+  font-family: 'Times New Roman', Times, serif;
 }
 body {
-     color: #575153;
 }
 header {
   background-image: url(images/Untitled-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   
 }
-h1 {
+h1 ,span {Arial, sans-serif;
     color:#222222;
 }
+
 #fixNav {
   display: flex;  
   width: 100%;
@@ -53,6 +56,19 @@ h1 {
     display: flex;
 }
 .Trademark{
+    width: 100%;
     font-size: 450px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin : 0%  32%;
+    letter-spacing: 25px;
+}
+ button{
+    width: 20%;
+    padding : 24px 6px;
+    font-size: 16px;
+    margin: 0 60% 50% 80%;
+    
+}
+.gioi-thieu{
+    margin-top: 15%;
 }
