@@ -2,73 +2,188 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* background-repeat: no-repeat; */
-  background-attachment: scroll;
-  color: #575153;
-  font-family: 'Times New Roman', Times, serif;
-}
-body {
-}
-header {
-  background-image: url(images/Untitled-1.jpg);
+  font-size: 14px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-attachment: scroll;
+  font-family: Verta;
+}
+#ThanhTren {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+.search {
+   display: flex;
+  
+  flex-direction: column;
+   
+  transform: translateY(50%);
+  
   
 }
-h1 ,span {Arial, sans-serif;
-    color:#222222;
+.logo {
+  margin: 0 auto;
+  margin: 0 50% 0 50%;
+}
+.logo img {
+  display: block;
+   transform: translateY(-50%);
+ 
+}
+input {
+  width: 250px;
+  height: 38px;
+  padding: 0 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  font-size: 14px;
+  
+}
+.slider{
+  width: 100%;
+    text-align: center;
+     background: url("https://nemshop.vn/FileUpload/Images/Editor/ANH%20WEB%20(1).jpg") no-repeat center center/cover;
+}
+.slider img {
+  vertical-align: middle;
+  border-style: none;
+  image-rendering: pixelated; /* Lam sac net hinh anh */
+  width: 100% !important;
+  
+  
 }
 
 #fixNav {
-  display: flex;  
   width: 100%;
   height: 35px;
-
+  background-color: #000000;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5); /*Đổ bóng cho menu*/
+  position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+  /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+  display: flex;
 }
 #fixNav ul {
   margin: 0;
   padding: 0;
+  margin: 0 auto;
 }
 #fixNav ul li {
   list-style: none inside;
   width: auto;
   float: left;
   line-height: 35px; /*Cho text canh giữa menu*/
+  color: #fff;
   padding: 0;
   margin-right: 10px;
   position: relative;
 }
 #fixNav ul li a {
-    text-transform: uppercase
-    white-space: nowrap;
-    padding: 0 10px ;
-    display: block;
-    text-decoration: none;
-    color: black;
+  text-transform: uppercase;
+  white-space: nowrap; /*Cho chữ trong menu không bị wrap*/
+  padding: 0 10px;
+  color: #fff;
+  display: block;
+  font-size: 0.8em;
+  text-decoration: none;
 }
-#fixNav ul li a:hover{
-    color: #8de3e3;  
+/*CSS Style cho Submenu*/
+#fixNav ul li ul {
+  position: absolute;
+  width: auto;
+  display: none;
+  background-color: #252525;
+  border-bottom: 3px solid #0082bb;
+  padding-left: 5px;
 }
-.logo{
-    display: inline-block;
+
+#fixNav ul li ul li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  float: none; /*Bỏ float cho li cấp thứ 2*/
 }
-.menu {
-    display: flex;
+/* Hover cho submenu */
+#fixNav:hover {
+  /* Hover thì li sẽ đổi màu*/
+  background-color: #000000;
 }
-.Trademark{
+#fixNav ul li:hover ul {
+  /*Display ra submenu*/
+  display: block;
+  width: 200%;
+  
+}
+
+/*Không copy cái này, dùng tăng padding top bottom để demo cuộn*/
+/* p {
+  padding-top: 100px;
+  padding-bottom: 100px;
+} */
+.selections {
+  /* display: inline-block; */
+  text-align: center;
+  margin: auto;
+}
+.column {
+  display: inline-block;
+  margin: 0 auto;
+  width: 20%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
-    font-size: 450px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin : 0%  32%;
-    letter-spacing: 25px;
+  }
 }
- button{
-    width: 20%;
-    padding : 24px 6px;
-    font-size: 16px;
-    margin: 0 60% 50% 80%;
-    
+.title {
+  
+  padding: 30px;
+  font-size: 30px;
+  color: #337ab7;
+  line-height: 36px;
+  font-style: normal;
 }
-.gioi-thieu{
-    margin-top: 15%;
+span {
+  text-decoration: line-through;
+}
+#footer{
+  display: flex;
+  text-decoration: center;
+  background-color: black;
+  justify-content: center;
+  
+}
+#footer h3{
+  
+  color:white;
+  
+}
+#footer p a{
+  text-decoration: none;
+  color: white; 
+}
+#footer p {
+  color: white;
+  
+}
+#footer img{
+  width: 30%;
+}
+#footer>.columnn{
+  
+  padding-left: 3%;
+  text-align: left;
+  line-height:20px;
+  font-size:30px;
 }
